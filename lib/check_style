@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    echo "Usage: check_style <java files>"
+    exit 1
+fi
+
+jar="${HOME}/lib/checkstyle-8.21-all.jar"
+lft="${HOME}/lib/checkstyle-lift.jar"
+xml="${HOME}/lib/checkstyle.xml"
+bas=-Dbasedir="${HOME}"
+sup=-Dsuppressions="${HOME}/lib/checkstyle-suppressions.xml"
+
+for arg in "$@"
+do
+    echo "$arg:"
+    java -cp ${lft}:${jar} ${bas} ${sup} com.puppycrawl.tools.checkstyle.Main -c "${xml}" $arg
+done

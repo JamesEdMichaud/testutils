@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN" "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+
+<suppressions>
+    <!-- stdlib exceptions -->
+    <suppress id="BitwiseAnd" files="(BinaryIn|BinaryOut|BinaryStdIn|BinaryStdOut|GrayscalePicture|Picture|StdAudio|StdRandom).java"/>
+    <suppress id="BitwiseOr" files="(BinaryIn|BinaryOut|BinaryStdIn|BinaryStdOut|GrayscalePicture|StdAudio).java"/>
+    <suppress checks="Comment" files="(BinaryIn|BinaryStdIn|Draw|GrayscalePicture|In|Out|Picture|StdAudio|StdStats|Stopwatch).java"/>
+    <suppress checks="FileLength" files="(Draw).java"/>
+    <suppress id="FloatType" files="(BinaryIn|BinaryOut|BinaryStdIn|BinaryStdOut|Draw|In|Out|StdAudio).java"/>
+    <suppress id="ImplementationInheritance" files="(Draw).java"/>
+    <suppress checks="IllegalInstantiation" files="(StdAudio).java"/>
+    <suppress id="IllegalKeyword" files="(Draw|StdAudio).java"/>
+    <suppress checks="IllegalMethodCall" files="(BinaryIn|BinaryStdIn|Draw|GrayscalePicture|In|Picture|StdAudio|StdOut|StdRandom|Stopwatch).java"/>
+    <suppress checks="IllegalType" files="(In|Out|StdRandom).java"/>
+    <suppress checks="InnerAssignment" files="(StdRandom).java"/>
+    <suppress checks="MyIllegalType" files="(BinaryOut|BinaryStdOut|Out).java"/>
+    <suppress checks="NeedBraces" files="(BinaryIn|BinaryOut|BinaryStdIn|BinaryStdOut|Draw|GrayscalePicture|In|Picture|StdArrayIO|StdAudio|StdRandom|StdStats).java"/>
+    <suppress checks="ParameterAssignment" files="(Draw|StdAudio).java"/>
+    <suppress id="Sqrt" files="(Stopwatch).java"/>
+    <suppress id="StaticInitializer" files="(StdAudio|StdDraw|StdIn|StdOut|StdRandom).java"/>
+    <suppress checks="StringLiteralCount" files="(BinaryIn|Draw|GrayscalePicture|Picture).java"/>
+    <suppress id="VariableLengthArgument" files="Out.java"/>
+
+    <!-- ipj exceptions -->
+    <suppress id="Sqrt" files="(TimeOps).java"/>
+    <suppress id="Wrapper" files="(BinarySearch|FibonacciSequence|LinearSearch).java"/>
+
+    <!-- dsa (code) exceptions -->
+    <suppress id="BitwiseAnd" files="(SeparateChainingHashST|HexDump).java"/>
+    <suppress checks="Comment" files="(BinarySearchST|BinarySearchTreeST|Huffman|LinearSearchST|LinkedBag|LinkedQueue|LinkedStack|RedBlackBinarySearchTreeST|QuickFindUF|QuickUnionUF|WeightedQuickUnionUF|ResizingArrayBag|ResizingArrayQueue|ResizingArrayStack|SeparateChainingHashST).java"/>
+    <suppress id="ImplementationInheritance" files="(Bag|Queue|Stack|UF|BasicST|OrderedST).java"/>
+    <suppress checks="LocalVariableName" files="(Graph|DiGraph|EdgeWeightedGraph|EdgeWeightedDiGraph).java"/>
+    <suppress checks="MemberName" files="(Graph|DiGraph|EdgeWeightedGraph|EdgeWeightedDiGraph).java"/>
+    <suppress checks="MethodName" files="(Graph|DiGraph|EdgeWeightedGraph|EdgeWeightedDiGraph).java"/>
+    <suppress checks="ParameterAssignment" files="(BinarySearchTreeST|Heap|IndexMinPQ|IndexMaxPQ|MaxPQ|MinPQ|RedBlackBinarySearchTreeST|QuickUnionUF|WeightedQuickUnionUF|TrieST).java"/>
+    <suppress checks="ParameterName" files="(Graph|DiGraph|EdgeWeightedGraph|EdgeWeightedDiGraph).java"/>
+    <suppress id="TypeParameter" files="(MinPQ|MaxPQ|IndexMinPQ|IndexMaxPQ|OrderedST|BinarySearchST|BinarySearchTreeST|RedBlackBinarySearchTreeST|Set).java"/>   
+    <suppress id="Wrapper" files="(IndexMinPQ|IndexMaxPQ).java"/>
+    
+    <!-- dsa (assignment) exceptions -->
+    <suppress checks="AnonInnerLength" files="(AutocompleteVisualizer).java"/>
+    <suppress checks="Comment" files="(AutocompleteVisualizer|BoidSimulator).java"/>
+    <suppress checks="IllegalCatch" files="(AutocompleteVisualizer).java"/>
+    <suppress checks="IllegalMethodCall" files="(AutocompleteVisualizer|SolverVisualizer).java"/>
+    <suppress checks="IllegalToken" files="(AutocompleteVisualizer).java"/>
+    <suppress id="LongFileName" files="(InteractivePercolationVisualizer).java"/>
+    <suppress checks="MethodLength" files="(AutocompleteVisualizer).java"/>
+    <suppress checks="ParameterName" files="(ShortestCommonAncestor).java"/>
+    <suppress checks="StringLiteralCount" files="(AutocompleteVisualizer).java"/>
+    <suppress id="Wrapper" files="(Primes).java"/>
+</suppressions>
+

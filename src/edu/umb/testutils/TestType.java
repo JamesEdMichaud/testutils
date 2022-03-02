@@ -1,0 +1,6 @@
+package edu.umb.testutils;
+
+public enum TestType {
+    MAIN, FAILED, EXCEPTION_CONSTRUCTOR, STYLE, FILE_EXISTS,
+    STDOUT, RETURN, ITERATOR, FIELD, EXCEPTION_METHOD, NODE_TREE
+}
